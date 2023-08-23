@@ -1,5 +1,5 @@
 import Sortable from "sortablejs";
-import { insertNodeAt, camelize, console, removeNode } from "./util/helper";
+import { insertNodeAt, camelize, removeNode } from "./util/helper";
 
 function buildAttribute(object, propName, value) {
   if (value === undefined) {

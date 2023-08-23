@@ -1,10 +1,4 @@
-function getConsole() {
-  if (typeof window !== "undefined") {
-    return window.console;
-  }
-  return global.console;
-}
-const console = getConsole();
+
 
 function cached(fn) {
   const cache = Object.create(null);
@@ -33,4 +27,4 @@ function insertNodeAt(fatherNode, node, position) {
   fatherNode.insertBefore(node, refNode);
 }
 
-export { insertNodeAt, camelize, console, removeNode };
+export { insertNodeAt, camelize, removeNode };
